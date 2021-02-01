@@ -1,8 +1,25 @@
+//##############RegEX#######################  From FreeCodeCamp.com Lessons
+// Javascript Regex Reference
+//  /abc/	A sequence of characters
+//  /[abc]/	Any character from a set of characters
+//  /[^abc]/	Any character not in a set of characters
+//  /[0-9]/	Any character in a range of characters
+//  /x+/	One or more occurrences of the pattern x
+//  /x+?/	One or more occurrences, nongreedy
+//  /x*/	Zero or more occurrences
+//  /x?/	Zero or one occurrence
+//  /x{2,4}/	Two to four occurrences
+//  /(abc)/	A group
+//  /a|b|c/	Any one of several patterns
+//  /\d/	Any digit character
+// /\w/	An alphanumeric character (“word character”)
+//  /\s/	Any whitespace character
+//  /./	Any character except newlines
+//  /\b/	A word boundary
+//  /^/	Start of input
+//  /$/	End of input
 
-let findGreater = (a,b) =>  a > b ? "a is greater" : "b is greater";
-console.log(findGreater(55, 1008));
 
-//##############RegEX#######################From FreeCodeCamp Lessons
 let petString = "James has a PET goat";
 let petRegex = /james|pet|GOAT|HaS/i;  //i ignores the letter case.  Also, the | stands for 'or'. Allows multiple words to be searched.
 let result2 = console.log(petRegex.test(petString));
@@ -64,18 +81,6 @@ bugStr.match(bgRegex); // Returns ["bug"]
 bogStr.match(bgRegex); // Returns null
 
 
-let goatStr = "Goat";
-let goodStr = "Good";
-let goolashStr = "Goulash";
-let goonStr = "Goon";
-let gouldStr = "Gould";
-let goRegex = /Go[aou]/i;
-console.log(goatStr.match(goRegex));
-console.log(goodStr.match(goRegex));
-console.log(goolashStr.match(goRegex));
-console.log(goonStr.match(goRegex));
-console.log(gouldStr.match(goRegex));
-
 
 
 //Match a bunch of characters all at once.  Example:  The Alphabet
@@ -129,8 +134,12 @@ let numRegex = /\d/g; // This will show how many digits are in movie titles.
 let result = movieName.match(numRegex).length;
 
 
+//Match All Non-Numbers  Use \D to look for only numbers. This is equal to [^0-9], which is non numbers due to the carrot symbol.
+let movieName = "2001: A Space Odyssey";
+let noNumRegex = /\D/g; // This will show how many characters (non numbers) are in movie titles.
+let result = movieName.match(noNumRegex).length;
 
-// Match Beginning String Patterns :  The carrot ^ can also search for pattersn at the beginning of strings
+// Match Beginning String Patterns :  The carrot ^ can also search for patterns at the beginning of strings
 let firstString = "Ricky is first and can be found.";
 let firstRegex = /^Ricky/;
 firstRegex.test(firstString);  // Returns true
@@ -148,11 +157,127 @@ storyRegex.test(noEnding);  // Returns false
 
 
 
+// Use the + sign to look for one or more characters and the asterisk * to look for zero or more characters.
+
+// Specify Upper and Lower Number of Matches:  
+let A4 = "aaaah";
+let A2 = "aah";
+let multipleA = /a{3,5}h/;   //to match only the letter a appearing between 3 and 5 times in the string "ah", your regex would be /a{3,5}h/
+multipleA.test(A4); // Returns true
+multipleA.test(A2); // Returns false
+
+
+
+// Specify Only the Lower Number of Matches
+let A4 = "haaaah";
+let A2 = "haah";
+let A100 = "h" + "a".repeat(100) + "h";
+let multipleA = /ha{3,}h/;  // to match only the string "hah" with the letter a appearing at least 3 times, your regex would be /ha{3,}h/  Notice the comma in the regex.
+multipleA.test(A4); // Returns true
+multipleA.test(A2); // Returns false
+multipleA.test(A100); // Returns true
+
+
+
+// Specify Exact Number of Matches
+let A4 = "haaaah";
+let A3 = "haaah";
+let A100 = "h" + "a".repeat(100) + "h";
+let multipleHA = /ha{3}h/;  //to match only the word "hah" with the letter a 3 times, your regex would be /ha{3}h/. Notice this one has no comma.
+multipleHA.test(A4); // Returns false
+multipleHA.test(A3); // Returns true
+multipleHA.test(A100); // Returns false
+
+
+// Check for All or None
+let american = "color";
+let british = "colour";
+let rainbowRegex= /colou?r/;  //there are slight differences in American and British English and you can use the question mark to match both spellings.
+rainbowRegex.test(american); // Returns true
+rainbowRegex.test(british); // Returns true
+
+
+// Positive and Negative Lookahead
+let quit = "qu";
+let noquit = "qt";
+let quRegex= /q(?=u)/;   //This looks ahead for the letter 'u' after q. 
+let qRegex = /q(?!u)/;   // This looks for no letter 'u' after q.
+quit.match(quRegex); // Returns ["q"]
+noquit.match(qRegex); // Returns ["q"]
+
+
+// Check For Mixed Grouping of Characters
+let testStr = "Pumpkin";
+let testRegex = /P(engu|umpk)in/;
+testRegex.test(testStr);   // Returns true
+
+// Example 2 of Check for Mixed Grouping of Characters
+// Fix the regex so that it checks for the names of Franklin Roosevelt or Eleanor Roosevelt in a case sensitive manner and it should make concessions for middle names.
+// Then fix the code so that the regex that you have created is checked against myString and either true or false is returned depending on whether the regex matches.
+let myString = "Eleanor Roosevelt";
+let myRegex = /(Franklin|Eleanor).*Roosevelt/;  //Use .* to allow for middle names.
+let result = myRegex.test(myString);
+
+
+
+// Reuse Patterns Using Capture Groups
+//You can search for repeat substrings using capture groups. 
+//Parentheses, ( and ), are used to find repeat substrings. You put the regex of the pattern that will repeat in between the parentheses.
+let repeatStr = "regex regex";
+let repeatRegex = /(\w+)\s\1/;
+repeatRegex.test(repeatStr); // Returns true
+repeatStr.match(repeatRegex); // Returns ["regex regex", "regex"]  ------Using the .match() method on a string will return an array with the string it matches, along with its capture group.
+
+
+// Use Capture Groups to Search and Replace
+let wrongText = "The sky is silver.";
+let silverRegex = /silver/;
+wrongText.replace(silverRegex, "blue");// Returns "The sky is blue."
+//You can also access capture groups in the replacement string with dollar signs ($).
+"Code Camp".replace(/(\w+)\s(\w+)/, '$2 $1'); // Returns "Camp Code"
+
+
+
+// Remove Whitespace from Start and End
+let hello = "   Hello, World!  ";
+let wsRegex = /^\s+|\s+$/g; // 
+let result = hello.replace(wsRegex, ""); // 
+
+
 
 // Find Characters with Lazy Matching
 let text = "<h1>Winter is coming</h1>";
 let myRegex = /<.*?>/; // Output:  <h1>
 let result = text.match(myRegex);
+
+
+// Match Whitespace   using \s
+let whiteSpace = "Whitespace. Whitespace everywhere!"
+let spaceRegex = /\s/g;
+whiteSpace.match(spaceRegex); // Returns [" ", " "]
+
+
+// Match Non-Whitespace Characters   using \S
+let whiteSpace = "Whitespace. Whitespace everywhere!"
+let nonSpaceRegex = /\S/g;
+whiteSpace.match(nonSpaceRegex).length; // Returns 32
+
+
+// Restrict Possible Usernames
+/* 
+Usernames are used everywhere on the internet. They are what give users a unique identity on their favorite sites
+You need to check all the usernames in a database. Here are some simple rules that users have to follow when creating their username.
+1)  Usernames can only use alpha-numeric characters.
+2)  The only numbers in the username have to be at the end. There can be zero or more of them at the end. Username cannot start with the number.
+3)  Username letters can be lowercase and uppercase.
+4)) Usernames have to be at least two characters long. A two-character username can only use alphabet letters as characters.
+*/
+let username = "JackOfAllTrades";
+let userCheck = /^[a-z][a-z]+\d*$|^[a-z]\d\d+$/i; 
+let result = userCheck.test(username);
+
+
+
 
 
 
