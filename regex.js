@@ -12,12 +12,39 @@
 //  /(abc)/	A group
 //  /a|b|c/	Any one of several patterns
 //  /\d/	Any digit character
+//  /\D/	Matches any character that is not a digit (Arabic numeral). Equivalent to [^0-9]. 
+//        For example, /\D/ or /[^0-9]/ matches "B" in "B2 is the suite number".
+// /\W/   Matches any character that is not a word character from the basic Latin alphabet. 
+//        Equivalent to [^A-Za-z0-9_]. For example, /\W/ or /[^A-Za-z0-9_]/ matches "%" in "50%" and "É" in "Émanuel".
+
 // /\w/	An alphanumeric character (“word character”)
-//  /\s/	Any whitespace character
+
+
+// /\s /	Matches a single white space character, including space, tab, form feed, line feed, and other Unicode spaces. 
+//        Equivalent to [ \f\n\r\t\v\u00a0\u1680\u2000-\u200a\u2028\u2029\u202f\u205f\u3000\ufeff]. For example, /\s\w*/ matches " bar" in "foo bar".
+
+//  /\S/	Matches a single character other than white space. Equivalent to [^ \f\n\r\t\v\u00a0\u1680\u2000-\u200a\u2028\u2029\u202f\u205f\u3000\ufeff]. 
+//        For example, /\S\w*/ matches "foo" in "foo bar".
+
 //  /./	Any character except newlines
 //  /\b/	A word boundary
 //  /^/	Start of input
 //  /$/	End of input
+
+// \t	Matches a horizontal tab.
+// \r	Matches a carriage return.
+// \n	Matches a linefeed.
+// \v	Matches a vertical tab.
+// \f	Matches a form-feed.
+// [\b]	Matches a backspace. If you're looking for the word-boundary character (\b), see Assertions.
+// \0	Matches a NUL character. Do not follow this with another digit.
+
+// \cX	Matches a control character using caret notation, where "X" is a letter from A–Z (corresponding to codepoints U+0001–U+001A). For example, /\cM\cJ/ matches "\r\n".
+
+// \xhh	Matches the character with the code hh (two hexadecimal digits).
+// \uhhhh	Matches a UTF-16 code-unit with the value hhhh (four hexadecimal digits).
+// \u{hhhh} or \u{hhhhh}	(Only when the u flag is set.) Matches the character with the Unicode value U+hhhh or U+hhhhh (hexadecimal digits).
+// \p{UnicodeProperty}, \P{UnicodeProperty}	Matches a character based on its Unicode character properties (to match just, for example, emoji characters, or Japanese katakana characters, or Chinese/Japanese Han/Kanji characters, etc.).
 
 
 let petString = "James has a PET goat";
