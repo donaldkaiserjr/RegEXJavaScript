@@ -18,7 +18,11 @@
           firstRegex.test(firstString);
           let notFirst = "You can't find Ricky now.";
           firstRegex.test(notFirst);
-       
+
+// $ symbol:  search the end of strings 
+          let theEnding = "This is a never ending story";
+          let storyRegex = /story$/;
+          storyRegex.test(theEnding); // This would return true because 'story' is at the end of the string. 
 
 
 // + symbol: The plus finds if something occurs 1 or more times consecutively. Like in "mississippi";  
@@ -27,8 +31,6 @@
           let result = difficultSpelling.match(myRegex);
 
 // * symbol:  similar to the + flag. But this finds if something occurs ZERO or more times. 
-
-
 
 
 
