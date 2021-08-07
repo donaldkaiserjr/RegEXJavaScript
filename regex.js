@@ -7,7 +7,13 @@
           testStr.match(repeatRegex);
           And here match returns the value ["Repeat", "Repeat", "Repeat"]
 
-// i flag:  ignore case.  F
+// i flag:  ignore case.  
+// ^ flag:  creates a set of characters that you DON'T want to match. Place a caret character (^) after the opening bracket and before the characters you 
+//          do not want to match. For example, /[^aeiou]/gi matches all characters that are not a vowel
+       
+
+
+
 //  /abc/	A sequence of characters
 //  /[abc]/	Any character from a set of characters
 //  /[^abc]/	Any character not in a set of characters
