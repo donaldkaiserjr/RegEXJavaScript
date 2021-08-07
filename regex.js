@@ -8,13 +8,18 @@
           And here match returns the value ["Repeat", "Repeat", "Repeat"]
 
 // i flag:  ignore case.  
-// ^ flag:  creates a set of characters that you DON'T want to match. Place a caret character (^) after the opening bracket and before the characters you 
+// ^ symbol: ^ creates a set of characters that you DON'T want to match. Place a caret character (^) after the opening bracket and before the characters you 
 //          do not want to match. For example, /[^aeiou]/gi matches all characters that are not a vowel
        
-// + flag:  The plus finds if something occurs 1 or more times consecutively. Like in "mississippi";  
+// + symbol: The plus finds if something occurs 1 or more times consecutively. Like in "mississippi";  
           let difficultSpelling = "Mississippi";
           let myRegex = /s+/gi; // Change this line
           let result = difficultSpelling.match(myRegex);
+
+// * symbol:  similar to the + flag. But this finds if something occurs ZERO or more times. 
+
+
+
 
 
 //  /abc/	A sequence of characters
