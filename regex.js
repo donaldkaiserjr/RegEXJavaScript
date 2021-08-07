@@ -2,10 +2,12 @@
 // Javascript Regex Reference
 // g flag:     To search or extract a pattern more than once, you can use the g flag.
 // ex:   let repeatRegex = /Repeat/g;
+          let testStr = "Repeat, Repeat, Repeat";
+          let ourRegex = /Repeat/g;
           testStr.match(repeatRegex);
           And here match returns the value ["Repeat", "Repeat", "Repeat"]
 
-
+// i flag:  ignore case.  F
 //  /abc/	A sequence of characters
 //  /[abc]/	Any character from a set of characters
 //  /[^abc]/	Any character not in a set of characters
