@@ -45,9 +45,13 @@
 //  /x{2,4}/	Two to four occurrences
 //  /(abc)/	A group
 //  /a|b|c/	Any one of several patterns
-//  /\d/	Any digit character
+
+//  /\d/	The shortcut to look for digit characters is \d, with a lowercase d. This is equal to the character class [0 - 9], which looks for a single 
+//        character of any number between zero and nine.
+
 //  /\D/	Matches any character that is not a digit (Arabic numeral). Equivalent to [^0-9]. 
 //        For example, /\D/ or /[^0-9]/ matches "B" in "B2 is the suite number".
+
 // /\W/   Matches any character that is not a word character from the basic Latin alphabet. 
 //        Equivalent to [^A-Za-z0-9_]. For example, /\W/ or /[^A-Za-z0-9_]/ matches "%" in "50%" and "É" in "Émanuel".
 
@@ -56,10 +60,10 @@
 //        Note, this character class also includes the underscore character(_).
 
 
-// /\s /	Matches a single white space character, including space, tab, form feed, line feed, and other Unicode spaces. 
+// /\s /	Looks for whtiespace.  Matches a single white space character, including space, tab, form feed, line feed, and other Unicode spaces. 
 //        Equivalent to [ \f\n\r\t\v\u00a0\u1680\u2000-\u200a\u2028\u2029\u202f\u205f\u3000\ufeff]. For example, /\s\w*/ matches " bar" in "foo bar".
 
-//  /\S/	Matches a single character other than white space. Equivalent to [^ \f\n\r\t\v\u00a0\u1680\u2000-\u200a\u2028\u2029\u202f\u205f\u3000\ufeff]. 
+//  /\S/	Matches NON white space characters. Equivalent to [^ \f\n\r\t\v\u00a0\u1680\u2000-\u200a\u2028\u2029\u202f\u205f\u3000\ufeff]. 
 //        For example, /\S\w*/ matches "foo" in "foo bar".
 
 //  /./	Any character except newlines
