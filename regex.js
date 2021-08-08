@@ -51,7 +51,9 @@
 // /\W/   Matches any character that is not a word character from the basic Latin alphabet. 
 //        Equivalent to [^A-Za-z0-9_]. For example, /\W/ or /[^A-Za-z0-9_]/ matches "%" in "50%" and "É" in "Émanuel".
 
-// /\w/	An alphanumeric character (“word character”)
+// /\w/	This shortcut is equal
+//        to[A - Za - z0 -9_]. This character class matches upper and lowercase letters plus numbers.
+//        Note, this character class also includes the underscore character(_).
 
 
 // /\s /	Matches a single white space character, including space, tab, form feed, line feed, and other Unicode spaces. 
