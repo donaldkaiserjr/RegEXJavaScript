@@ -42,7 +42,10 @@
 //  /x+?/	One or more occurrences, nongreedy
 //  /x*/	Zero or more occurrences
 //  /x?/	Zero or one occurrence
-//  /x{2,4}/	Two to four occurrences
+//  /x{2,4}/	Two to four occurrences:  
+                    to match only the letter a appearing between 3 and 5 times in the string ah, your regex would be /a{3,5}h/.
+                    
+                    
 //  /(abc)/	A group
 //  /a|b|c/	Any one of several patterns
 
