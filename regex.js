@@ -1,7 +1,7 @@
 //##############RegEX#######################  From FreeCodeCamp.com Lessons
 
 
-// g flag:  To search or extract a pattern more than once, you can use the g flag.
+// g flag:  To search or extract a pattern more than once, you can use the 'g' flag.
 // ex:   let repeatRegex = /Repeat/g;
           let testStr = "Repeat, Repeat, Repeat";
           let ourRegex = /Repeat/g;
