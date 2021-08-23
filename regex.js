@@ -267,6 +267,7 @@ multipleHA.test(A100); // Returns false
 
 
 
+
 // Check for All or None
 let american = "color";
 let british = "colour";
