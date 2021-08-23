@@ -34,6 +34,7 @@
           let myRegex = /s+/gi; // Change this line
           let result = difficultSpelling.match(myRegex);
 
+
 // * symbol:  similar to the + flag. But this finds if something occurs ZERO or more times. 
 
 
