@@ -22,6 +22,7 @@
           firstRegex.test(notFirst);
 
 
+
 // $ symbol:  search the end of strings 
           let theEnding = "This is a never ending story";
           let storyRegex = /story$/;
