@@ -314,6 +314,7 @@ repeatRegex.test(repeatStr); // Returns true
 repeatStr.match(repeatRegex); // Returns ["regex regex", "regex"]  ------Using the .match() method on a string will return an array with the string it matches, along with its capture group.
 
 
+
 // Use Capture Groups to Search and Replace
 let wrongText = "The sky is silver.";
 let silverRegex = /silver/;
