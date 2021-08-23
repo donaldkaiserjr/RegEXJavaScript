@@ -214,6 +214,7 @@ let numRegex = /\d/g; // This will show how many digits are in movie titles.
 let result = movieName.match(numRegex).length;
 
 
+
 //Match All Non-Numbers  Use \D to look for only numbers. This is equal to [^0-9], which is non numbers due to the carrot symbol.
 let movieName = "2001: A Space Odyssey";
 let noNumRegex = /\D/g; // This will show how many characters (non numbers) are in movie titles.
