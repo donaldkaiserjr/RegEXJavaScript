@@ -323,8 +323,8 @@ let result = myRegex.test(myString);
 
 
 // Reuse Patterns Using Capture Groups
-//You can search for repeat substrings using capture groups. 
-//Parentheses, ( and ), are used to find repeat substrings. You put the regex of the pattern that will repeat in between the parentheses.
+// You can search for repeat substrings using capture groups. 
+// Parentheses, ( and ), are used to find repeat substrings. You put the regex of the pattern that will repeat in between the parentheses.
 let repeatStr = "regex regex";
 let repeatRegex = /(\w+)\s\1/;
 repeatRegex.test(repeatStr); // Returns true
