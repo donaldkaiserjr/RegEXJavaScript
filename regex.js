@@ -98,6 +98,7 @@
                     
 // \cX	Matches a control character using caret notation, where "X" is a letter from A–Z (corresponding to codepoints U+0001–U+001A). For example, /\cM\cJ/ matches "\r\n".
 
+                    
 // \xhh	Matches the character with the code hh (two hexadecimal digits).
 // \uhhhh	Matches a UTF-16 code-unit with the value hhhh (four hexadecimal digits).
 // \u{hhhh} or \u{hhhhh}	(Only when the u flag is set.) Matches the character with the Unicode value U+hhhh or U+hhhhh (hexadecimal digits).
