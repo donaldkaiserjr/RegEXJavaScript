@@ -118,6 +118,7 @@ let codingRegex = /coding/;
 console.log(extractStr.match(codingRegex));
 
 
+
 // Match WORDS that Occur One or More Times
 let repetitive = "Goulash Goulash Goulash";
 let myRegex = /Goulash/g;  // the g flag extracts a pattern ["Goulash", "Goulash", "Goulash"]
