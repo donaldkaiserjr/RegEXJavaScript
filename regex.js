@@ -126,6 +126,7 @@ let myRegex = /Goulash/g;  // the g flag extracts a pattern ["Goulash", "Goulash
 repetitive.match(myRegex);
 
 
+
 // Match CHARACTERS that Occur ONE or More Times
 let difficultSpelling = "Mississippi";
 let myRegex = /s+/g; // Change this line.  If the word were Spell and you wanted to find 'l' the regex would be:  /l+/g;
