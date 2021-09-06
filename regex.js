@@ -16,6 +16,7 @@
 //          characters you do not want to match. For example, /[^aeiou]/gi matches all characters that are not a vowel
 //          It can also search for patterns at the beginning of strings.
 
+
           let firstString = "Ricky is first and can be found.";
           let firstRegex = /^Ricky/;
           firstRegex.test(firstString);
