@@ -300,6 +300,7 @@ rainbowRegex.test(american); // Returns true
 rainbowRegex.test(british); // Returns true
 
 
+
 // Positive and Negative Lookahead
 let quit = "qu";
 let noquit = "qt";
