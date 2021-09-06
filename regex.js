@@ -278,7 +278,6 @@ multipleA.test(A2); // Returns false
 multipleA.test(A100); // Returns true
 
 
-
 // Specify Exact Number of Matches
 let A4 = "haaaah";
 let A3 = "haaah";
