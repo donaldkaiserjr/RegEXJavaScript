@@ -156,6 +156,7 @@ huRegex.test(humStr); // Returns true
 huRegex.test(hugStr); // Returns true
 
 
+
 let booStr = "I just love my boo";
 let bootStr = "These boots were made for walking";
 let boRegex = /.bo/;
