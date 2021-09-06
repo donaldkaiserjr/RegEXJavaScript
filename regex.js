@@ -110,6 +110,7 @@
 // \p{UnicodeProperty}, \P{UnicodeProperty}	Matches a character based on its Unicode character properties (to match just, for example, emoji characters, or Japanese katakana characters, or Chinese/Japanese Han/Kanji characters, etc.).
 
 
+                    
 let petString = "James has a PET goat";
 let petRegex = /james|pet|GOAT|HaS/i;  //i ignores the letter case.  Also, the | stands for 'or'. Allows multiple words to be searched.
 let result2 = console.log(petRegex.test(petString));
