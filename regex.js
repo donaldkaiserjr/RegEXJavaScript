@@ -395,6 +395,3 @@ let result = userCheck.test(username);
 
 
 
-
-
-
