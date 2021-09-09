@@ -1,7 +1,6 @@
 //####################RegEX#######################  FreeCodeCamp.com Lessons
 
 
-
 // g flag:  To search or extract a pattern more than once, you can use the 'g' flag.
 
 
@@ -13,7 +12,6 @@
 
 
 // i flag:  ignore case.  
-
 
 
 // ^ symbol: ^ (carrot) creates a set of characters that you DON'T want to match. Place a caret character (^) after the opening bracket and before the 
