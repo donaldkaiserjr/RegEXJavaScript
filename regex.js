@@ -243,6 +243,7 @@ let noNumRegex = /\D/g; // This will show how many characters (non numbers) are 
 let result = movieName.match(noNumRegex).length;
 
 
+
 // Match Beginning String Patterns :  The carrot ^ can also search for patterns at the beginning of strings
 let firstString = "Ricky is first and can be found.";
 let firstRegex = /^Ricky/;
