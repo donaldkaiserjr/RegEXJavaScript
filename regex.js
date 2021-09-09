@@ -362,6 +362,7 @@ let spaceRegex = /\s/g;
 whiteSpace.match(spaceRegex); // Returns [" ", " "]
 
 
+
 // Match Non-Whitespace Characters   using \S
 let whiteSpace = "Whitespace. Whitespace everywhere!"
 let nonSpaceRegex = /\S/g;
