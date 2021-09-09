@@ -137,7 +137,6 @@ let myRegex = /s+/g; // Change this line.  If the word were Spell and you wanted
 let result = difficultSpelling.match(myRegex);
 
 
-
 // Match Characters that Occur ZERO or More Times
 let soccerWord = "gooooooooal!";
 let gPhrase = "gut feeling";
