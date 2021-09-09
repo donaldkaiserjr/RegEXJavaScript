@@ -191,7 +191,6 @@ batStr.match(dkRegex); // Returns ["bat"]
 matStr.match(dkRegex); // Returns null
 
 
-
 // Match Numbers and Letters of the Alphabet
 let jennyStr = "Jenny8675309";
 let myRegex2 = /[a-z0-9]/ig;
