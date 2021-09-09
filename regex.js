@@ -372,6 +372,7 @@ whiteSpace.match(nonSpaceRegex).length; // Returns 32
 // Restrict Possible Usernames
 /* 
 
+
 Usernames are used everywhere on the internet. They are what give users a unique identity on their favorite sites
 You need to check all the usernames in a database. Here are some simple rules that users have to follow when creating their username.
 
