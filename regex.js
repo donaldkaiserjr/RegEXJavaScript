@@ -123,13 +123,11 @@ let codingRegex = /coding/;
 console.log(extractStr.match(codingRegex));
 
 
-
 // Match WORDS that Occur One or More Times
 let repetitive = "Goulash Goulash Goulash";
 let myRegex = /Goulash/g;  // the g flag extracts a pattern ["Goulash", "Goulash", "Goulash"]
 // be sure to put both flags gi so that i ignores letter case and g finds a pattern of mulitple "Goulash" entries.
 repetitive.match(myRegex);
-
 
 
 // Match CHARACTERS that Occur ONE or More Times
@@ -147,7 +145,6 @@ let goRegex = /go*/;
 soccerWord.match(goRegex); // Returns ["goooooooo"]
 gPhrase.match(goRegex); // Returns ["g"]
 oPhrase.match(goRegex); // Returns null
-
 
 
 
