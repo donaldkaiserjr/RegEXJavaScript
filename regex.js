@@ -369,7 +369,6 @@ let nonSpaceRegex = /\S/g;
 whiteSpace.match(nonSpaceRegex).length; // Returns 32
 
 
-
 // Restrict Possible Usernames
 /* 
 
