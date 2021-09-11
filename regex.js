@@ -2,6 +2,7 @@
 
 
 
+
 // g flag:  To search or extract a pattern more than once, you can use the 'g' flag.
 
 
