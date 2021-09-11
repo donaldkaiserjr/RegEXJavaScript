@@ -15,7 +15,6 @@
 
 
 
-
 // ^ symbol: ^ (carrot) creates a set of characters that you DON'T want to match. Place a caret character (^) after the opening bracket and before the 
 //          characters you do not want to match. For example, /[^aeiou]/gi matches all characters that are not a vowel
 //          It can also search for patterns at the beginning of strings.
