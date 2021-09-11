@@ -341,7 +341,6 @@ wrongText.replace(silverRegex, "blue");// Returns "The sky is blue."
 "Code Camp".replace(/(\w+)\s(\w+)/, '$2 $1'); // Returns "Camp Code"
 
 
-
 // Remove Whitespace from Start and End
 let hello = "   Hello, World!  ";
 let wsRegex = /^\s+|\s+$/g; // 
