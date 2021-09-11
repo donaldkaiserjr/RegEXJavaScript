@@ -383,6 +383,7 @@ You need to check all the usernames in a database. Here are some simple rules th
 4)) Usernames have to be at least two characters long. A two-character username can only use alphabet letters as characters.
 
 
+
 */
 let username = "JackOfAllTrades";
 let userCheck = /^[a-z][a-z]+\d*$|^[a-z]\d\d+$/i; 
