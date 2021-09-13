@@ -61,7 +61,7 @@
   
                     
 //  /\d/	The shortcut to look for digit characters is \d, with a lowercase d. This is equal to the character class [0 - 9], which looks for a single 
-//        character of any number between zero and nine.
+//        character of any number between zero and nine
 
                     
 //  /\D/	Matches any character that is not a digit (Arabic numeral). Equivalent to [^0-9]. 
