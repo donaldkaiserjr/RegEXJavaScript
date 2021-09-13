@@ -20,12 +20,12 @@
           let firstString = "Ricky is first and can be found.";
           let firstRegex = /^Ricky/;
           firstRegex.test(firstString);
-          let notFirst = "You can't find Ricky now.";
+          let notFirst = "You can't find Ricky now."
           firstRegex.test(notFirst);
 
 
 // $ symbol:  search the end of strings 
-          let theEnding = "This is a never ending story";
+          let theEnding = "This is a never ending story"
           let storyRegex = /story$/;
           storyRegex.test(theEnding); // This would return true because 'story' is at the end of the string. 
 
