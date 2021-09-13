@@ -30,7 +30,7 @@
           storyRegex.test(theEnding); // This would return true because 'story' is at the end of the string. 
 
 
-// + symbol: The plus finds if something occurs 1 or more times consecutively. Like in "mississippi";  
+// + symbol: The plus finds if something occurs 1 or more times consecutively. Like in "mississippi"  
           let difficultSpelling = "Mississippi";
           let myRegex = /s+/gi; // Change this line
           let result = difficultSpelling.match(myRegex);
