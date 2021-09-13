@@ -90,7 +90,7 @@
 
                     
                  
-// \t	Matches a horizontal tab.
+// \t	Matches a horizontal tab
 // \r	Matches a carriage return.
 // \n	Matches a linefeed.
 // \v	Matches a vertical tab.
