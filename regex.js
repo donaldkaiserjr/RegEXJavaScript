@@ -80,7 +80,7 @@
 
                     
 //  /\S/	Matches NON white space characters. Equivalent to [^ \f\n\r\t\v\u00a0\u1680\u2000-\u200a\u2028\u2029\u202f\u205f\u3000\ufeff]. 
-//        For example, /\S\w*/ matches "foo" in "foo bar".
+//        For example, /\S\w*/ matches "foo" in "foo bar"
 
                     
 //  /./	Any character except newlines
