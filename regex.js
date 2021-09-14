@@ -57,7 +57,6 @@
                     
 //  /(abc)/	A group
 //  /a|b|c/	Any one of several patterns
-
   
                     
 //  /\d/	The shortcut to look for digit characters is \d, with a lowercase d. This is equal to the character class [0 - 9], which looks for a single 
