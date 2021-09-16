@@ -193,6 +193,7 @@ console.log(jennyStr.match(myRegex2)); //["J", "e", "n", "n", "y", "8", "6", "7"
 
 
 
+
 // Match All Letters and Numbers  :  The \w shorcut is equal to [A-Za-z0-9_]. It matches upper and lowercase letters and numbers.
 let longHand = /[A-Za-z0-9_]+/;
 let shortHand = /\w+/;
